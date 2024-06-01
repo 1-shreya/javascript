@@ -1,0 +1,13 @@
+<script>
+    // ^-->1st char
+    // ^-->last char
+    // .-->each will selected
+    // ?=-->current char
+    // *-->anywhere in string
+    var regex =
+      /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\-]).{4,8}$/;
+    var pwd = "Sh#555ew";
+    var result = regex.test(pwd);
+    console.log(result);
+  </script>
+  

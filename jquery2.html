@@ -1,0 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- javascript callback-function which is passed as an argument to
+    another function to perform some kint of action -->
+<button>click</button>
+<p>Hello chetana welcome to your new place....</p>
+<script>
+  $("button").click(function () {
+    alert();
+    $("p").css("background","wheat")
+    $("p").css("font-size","40px")
+    $("p").css("border","dashed")
+    $("p").text("<b> don not po to your place</b>")
+    $("p").html("<b> don not po to your place</b>")
+    $("p").width(200).height(400)//chaining multiple function at a time
+    $("p").animate({"margin-left":"200px","border-radius":"20px"},2000)
+   
+  });
+</script>

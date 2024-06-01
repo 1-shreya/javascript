@@ -1,0 +1,56 @@
+<script>
+ 
+  var product = [
+    {
+      name: "Rhythm",
+      price: "Rs 850",
+      path: "perfume.jpg",
+      size: ["100ml", "200ml", "350ml"],
+    },
+    {
+      name: "Kay ali",
+      price: "Rs 1050",
+      path: "per3.jpg",
+      size: ["100ml", "200ml", "350ml"],
+    },
+    {
+      name: " Chanel",
+      price: "Rs 550",
+      path: "perfume2.jpg",
+      size: ["100ml", "200ml", "350ml"],
+    },
+  ];
+  console.log(product);
+  var i=0
+  while(i<product.length)
+  {
+    console.log(i,product[i]);
+    document.write(`
+  <div>
+    <img src="${product[i].path}" alt="">
+    <h2>${product[i].price}</h2>
+    <p>${product[i].name}</p>
+    <p>${product[i].size}</p>
+    <button>Add to cart</button>
+    
+</div>
+`)
+    i++;
+    
+  }
+</script>
+
+<style>
+
+div{
+    
+    border: outset;
+    width: 250px;
+    float:left;
+
+}
+
+img{
+    width: 100%;
+}
+</style>

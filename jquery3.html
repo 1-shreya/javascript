@@ -1,0 +1,39 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<button id="x1">open modal box</button>
+<div class="blackbox"></div>
+<div class="modalbox"></div>
+<style>
+    body{
+        height: 1000px;
+    }
+    .blackbox{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0,0, 0.7);
+        z-index: 1;
+        display: none;
+    }
+     .modalbox{
+        width: 800px;
+        height: 250px;
+        background: white;
+        position: fixed;
+        left: 50%;
+        margin-left: -400px;
+        top: -250px;
+        z-index: 2;
+
+    } 
+</style>
+<script>
+    $("button").click(function(){
+        // $(".blackbox").show();
+        $(".blackbox").fadeIn(2000);
+        $(".modalbox").animate({
+            "top":"100px"
+        },2000)
+    })
+</script>

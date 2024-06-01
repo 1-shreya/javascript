@@ -1,0 +1,19 @@
+<script>
+  var product = {
+    name: "perfume",
+    price: "Rs 850",
+    path: "perfume.jpg",
+  "size":['100ml','200ml','350ml']
+};
+  console.log(product);
+  document.write(`
+  <div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+    <p>${product.size}</p>
+    <button>Add to cart</button>
+    
+</div>
+`)
+</script>

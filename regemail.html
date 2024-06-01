@@ -1,0 +1,9 @@
+<script>
+  // ^-->1st char
+  // ^-->last char
+  var regex =
+    /^([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[A-Za-z0-9])@(([a-zA-Z0-9]([a-zA-Z0-9\-]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)$/;
+  var email = "shindeshreya1250@gmail.com";
+  var result = regex.test(email);
+  console.log(result);
+</script>

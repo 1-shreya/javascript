@@ -1,0 +1,20 @@
+<script>
+    function emi(p,n,r)
+    {
+        console.log("Function call");
+        var openingBalance = 2500000;
+       
+        n=n*12;
+        r=r/12/100;
+        var emi=p*r*(1+r)**n/[(1+r)**n-1];
+        
+        var closingBalance=openingBalance-r;
+        console.log(emi);
+        
+        
+
+    }
+    emi(2500000,30,8.7);
+</script>
+
+<!--  for (var i = 1; i <=n; i++) { -->
